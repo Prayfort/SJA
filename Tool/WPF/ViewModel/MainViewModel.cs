@@ -1,4 +1,10 @@
+using System.Collections.Generic;
+using System.ComponentModel.Composition;
+using System.ComponentModel.Composition.Hosting;
+using System.Windows.Controls;
+using System.Windows.Documents;
 using GalaSoft.MvvmLight;
+using Interfaces;
 
 namespace WPF.ViewModel
 {
@@ -16,11 +22,25 @@ namespace WPF.ViewModel
     /// </summary>
     public class MainViewModel : ViewModelBase
     {
+        [ImportMany(typeof(ITabAddin))]
+        private List<ITabAddin> _tabAddins = null; 
+        
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
         public MainViewModel()
         {
+            
+
+            DirectoryCatalog catalog = new DirectoryCatalog(".");
+            CompositionContainer container = new CompositionContainer(catalog);
+            container.ComposeParts(this);
+
+            foreach (ITabAddin tabAddin in _tabAddins)
+            {
+                tabAddin.Initialisierung(TabControl);
+            }
+
             ////if (IsInDesignMode)
             ////{
             ////    // Code runs in Blend --> create design time data.
@@ -30,5 +50,7 @@ namespace WPF.ViewModel
             ////    // Code runs "for real"
             ////}
         }
+
+        public TabControl TabControl { get; set; }
     }
 }

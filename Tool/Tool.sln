@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF", "WPF\WPF.csproj", "{1083B128-F909-4C47-A7CE-30CBF43723D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalSeriesAddin", "LocalSeriesAddin\LocalSeriesAddin.csproj", "{22E43E16-BB14-4DF6-AAE4-19D328EE0837}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{A5A559BF-27E3-422A-BD58-64AA3FCB16DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{1083B128-F909-4C47-A7CE-30CBF43723D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1083B128-F909-4C47-A7CE-30CBF43723D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1083B128-F909-4C47-A7CE-30CBF43723D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22E43E16-BB14-4DF6-AAE4-19D328EE0837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22E43E16-BB14-4DF6-AAE4-19D328EE0837}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22E43E16-BB14-4DF6-AAE4-19D328EE0837}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22E43E16-BB14-4DF6-AAE4-19D328EE0837}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5A559BF-27E3-422A-BD58-64AA3FCB16DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5A559BF-27E3-422A-BD58-64AA3FCB16DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5A559BF-27E3-422A-BD58-64AA3FCB16DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5A559BF-27E3-422A-BD58-64AA3FCB16DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
